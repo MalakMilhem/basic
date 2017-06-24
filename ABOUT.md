@@ -25,6 +25,8 @@ I thought about how we can centralize the code and make in readable and maintain
  1)link lat and long attitude to google map for each hotel;
  2) send and email or push notification to useres when price of their favorite hotel drop
  3) make crop jobs that give us data for the most comfortable hotes and display them to users
- 
+ something I couldn't find :
+ 1) I don't fine limit for the requested objects. for exmple I ned to retrive 10 hotel per request
+ to solve this problem I go thtrow loop and cut off the limit I want ...
  
  I have around two year in web develpment as asoftware engineer. 
