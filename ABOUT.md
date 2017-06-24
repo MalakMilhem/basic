@@ -34,4 +34,8 @@ I thought about how we can centralize the code and make in readable and maintain
  
  
  General info :
- I have around two year in web development as asoftware engineer. 
+ I have around two year in web development as asoftware engineer.
+ the most programming language I used is php and this is the main reason
+  I chose it.
+  yii2 framework is very useful framework that structure your code by the mvc design pattern and 
+  by encapsulate your data and classes .
