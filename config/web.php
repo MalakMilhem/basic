@@ -8,6 +8,9 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        'heroku' => [
+                'class' => 'purrweb\heroku\HerokuGeneratorController',
+            ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'HF-8hxg77WUBlqe6cszNlcp_4uwA4Reh',
