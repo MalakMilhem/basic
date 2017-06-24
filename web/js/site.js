@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+    $('.flexslider').flexslider({
+        controlNav: false
+    });
+
+    // https://css-tricks.com/snippets/jquery/smooth-scrolling/
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
     $( function() {
         var availableTags = [
             "New Orleans",
@@ -42,29 +60,6 @@ $(document).ready(function() {
 
 // HTML document is loaded. DOM is ready.
 $(function() {
-
-    // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
-
-// Load Flexslider when everything is loaded.
-$(window).load(function() {
-
-//	For images only
-    $('.flexslider').flexslider({
-        controlNav: false
-    });
 
 
 });
