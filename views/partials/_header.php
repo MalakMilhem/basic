@@ -16,7 +16,7 @@ NavBar::begin([
 echo Nav::widget([
     'options' => ['class' => 'navbar-nav navbar-right'],
     'items' => [
-        ['label' => 'Home', 'url' => '/site/index'],
+        ['label' => 'Home', 'url' => Yii::$app->homeUrl],
         ['label' => 'About', 'url' => '#'],
         ['label' => 'Contact', 'url' => '#'],
         Yii::$app->user->isGuest ? (

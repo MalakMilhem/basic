@@ -2,9 +2,10 @@
 $parts = explode('/',$model['hotelInfo']['hotelImageUrl']);
 $originalLastPart  = end($parts);
 $lastPart = str_replace('t','l',$originalLastPart);
-$imgUrl = str_replace($originalLastPart,$lastPart ,$model['hotelInfo']['hotelImageUrl'])
+$imgUrl = str_replace($originalLastPart,$lastPart ,$model['hotelInfo']['hotelImageUrl']);
 ?>
-<a href="<?= \yii\helpers\Html::encode($model['hotelUrls']['hotelInfositeUrl'])?>">
+
+<a href="<?= urldecode($model['hotelUrls']['hotelInfositeUrl'])?>">
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
         <div class="tm-home-box-2">
             <img src="<?=$imgUrl?>" alt="image" class="img-responsive">
