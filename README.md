@@ -48,7 +48,12 @@ directly under the Web root.
 cd basic
 php yii serve --port=8888
 ~~~
+then in bowser type 
 
+~~~
+http://localhost:8888/
+
+~~~
 
 CONFIGURATION
 -------------
