@@ -12,6 +12,9 @@
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
     },
+    "asset-installer-paths": {
+        "bower-asset-library": "vendor/bower-assets"
+    },
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
@@ -21,7 +24,9 @@
         "yiisoft/yii2-jui": "^2.0",
         "kartik-v/yii2-widget-rating": "*",
         "yiisoft/yii2-debug": "~2.0",
-        "yiisoft/yii2-gii": "~2.0"
+        "yiisoft/yii2-gii": "~2.0",
+        "spanjeta/yii2-install": "*",
+        "fxp/composer-asset-plugin":"^1.2.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
